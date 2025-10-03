@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programa Conecta - Home</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f0f2f5;
+        margin: 0;
+    }
+    header {
+        background: #007bff;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    .container {
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+    }
+    h2 {
+        color: #333;
+    }
+    form input, form textarea, form select {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    form button {
+        background: #007bff;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    form button:hover {
+        background: #0056b3;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    table, th, td {
+        border: 1px solid #ccc;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+    th {
+        background: #007bff;
+        color: white;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Programa Conecta - Sistema de Chamados Internos</h1>
+</header>
+<div class="container">
+  <h2>Cadastro de Chamado</h2>
+  <form>
+    <input type="text" name="titulo" placeholder="Título do chamado" required>
+    <textarea name="descricao" placeholder="Descrição do chamado" rows="4" required></textarea>
+    <select name="prioridade" required>
+      <option value="">Selecione prioridade</option>
+      <option value="Baixa">Baixa</option>
+      <option value="Média">Média</option>
+      <option value="Alta">Alta</option>
+    </select>
+    <button type="submit">Cadastrar Chamado</button>
+  </form>
+
+  <h2>Chamados Cadastrados</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Descrição</th>
+      <th>Prioridade</th>
+      <th>Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>1</td>
+      <td>Exemplo de chamado</td>
+      <td>Descrição do chamado de teste</td>
+      <td>Média</td>
+      <td>Aberto</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
